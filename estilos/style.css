@@ -212,16 +212,24 @@ header > menu > nav > ul > li > a:hover::after{ width:100%; }
   width:100%; max-width:700px;
   display:flex; justify-content:center; flex-wrap:wrap; gap:18px;
 }
-.carrossel img{
-  width:96px; height:96px; border-radius:10px; object-fit:cover;
-  box-shadow:0 0 0 1px var(--glass-border);
-  filter:grayscale(.15);
-  transition:transform .3s ease, box-shadow .3s ease, filter .3s ease;
+.carrossel > :is(img, .neogrid-logo) {
+  width: 96px;
+  height: 96px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px var(--glass-border);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
-.carrossel img:hover{
-  transform:translateY(-4px) scale(1.04);
-  box-shadow:0 0 0 1px rgba(239,57,172,.5), 0 12px 28px rgba(203,39,145,.25);
-  filter:grayscale(0);
+.carrossel > img { object-fit: cover; }
+
+@media (hover: hover) {
+  .carrossel > :is(img, .neogrid-logo):hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 0 0 1px rgba(239, 57, 172, .5), 0 12px 28px rgba(203, 39, 145, .25);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carrossel > :is(img, .neogrid-logo):hover { transform: none; }
 }
 
 /* ---------- SOBRE ---------- */
@@ -326,5 +334,5 @@ footer .blob{ width:520px; height:520px; background:var(--magenta); opacity:.28;
   .nav-toggle{ display:block; }
 
   .profissional-container p{ padding:0 8px; }
-  .carrossel img{ width:76px; height:76px; }
+  .carrossel > :is(img, .neogrid-logo) { width: 76px; height: 76px; }
 }

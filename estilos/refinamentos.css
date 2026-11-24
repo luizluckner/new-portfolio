@@ -77,11 +77,7 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 96px;
-  aspect-ratio: 1;
-  border-radius: 10px;
   background: #fdfdfd;
-  box-shadow: 0 0 0 1px var(--glass-border);
 }
 .neogrid-symbol, .neogrid-wordmark {
   background-image: url("../image/neogrid.png");
@@ -99,7 +95,6 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
   background-size: 214.797% auto;
   background-position: 69.439% 52.778%;
 }
-@media (max-width: 760px) { .neogrid-logo { width: 76px; } }
 
 .validator-page .case-content figure img {
   width: 100%;
