@@ -6,8 +6,21 @@
 :where(a, button):focus-visible { outline: 2px solid #65f0ee; outline-offset: 4px; }
 main section[id], .case-content [id] { scroll-margin-top: 100px; }
 .card:hover, .card:focus-within { transform: none; border-color: rgba(239, 57, 172, .5); box-shadow: 0 20px 50px rgba(0, 0, 0, .35); }
-#cards .card a { align-self: flex-start; border: 0; border-bottom: 1px solid rgba(255, 255, 255, .38); padding: 4px 0; border-radius: 0; text-align: left; }
-#cards .card a:hover { background: transparent; }
+#cards .card a {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, .55);
+  border-radius: 6px;
+  background: transparent;
+  text-align: left;
+}
+#cards .card a:hover, #cards .card a:focus-visible {
+  border-color: var(--pink-bright);
+  background: rgba(255, 255, 255, .06);
+}
 .validator-art { display: grid; align-content: center; justify-items: start; gap: 12px; min-height: 200px; padding: clamp(20px, 4vw, 42px); color: #fafafa; background: radial-gradient(ellipse at 95% 110%, #721e6a, transparent 72%), linear-gradient(145deg, #31205d, #160831); }
 .validator-art span { color: #d6caea; font-size: .875rem; }
 .validator-art strong { font-family: "Funnel Display", sans-serif; font-size: clamp(1.05rem, 2vw, 1.45rem); }
