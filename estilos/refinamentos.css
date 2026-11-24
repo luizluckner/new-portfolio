@@ -63,3 +63,34 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
   .nav-actions .nav-toggle { min-width: 44px; min-height: 44px; }
   #navList:not(.open) { visibility: hidden; }
 }
+
+/* Stacked layout using the original Neogrid symbol and lettering. */
+.neogrid-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 96px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  background: #fdfdfd;
+  box-shadow: 0 0 0 1px var(--glass-border);
+}
+.neogrid-symbol, .neogrid-wordmark {
+  background-image: url("../image/neogrid.png");
+  background-repeat: no-repeat;
+}
+.neogrid-symbol {
+  width: 38%;
+  aspect-ratio: 156 / 164;
+  background-size: 576.923% auto;
+  background-position: 19.892% 50.162%;
+}
+.neogrid-wordmark {
+  width: 78%;
+  aspect-ratio: 419 / 113;
+  background-size: 214.797% auto;
+  background-position: 69.439% 52.778%;
+}
+@media (max-width: 760px) { .neogrid-logo { width: 76px; } }
