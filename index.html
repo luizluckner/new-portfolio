@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luiz Eduardo | Product Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="./estilos/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./image/favicon-32x32.png">
+<link rel="stylesheet" href="./estilos/refinamentos.css">
+</head>
+<body>
+<header id="siteHeader">
+    <menu>
+        <nav>
+            <a href="#hero">
+                <h3>LuizE<span class="dot">.</span></h3>
+            </a>
+            <ul id="navList">
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#profissional">Profissional</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-controls="navList" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </menu>
+</header>
+<main>
+    <section id="hero">
+        <div class="bg-hero" aria-hidden="true"></div>
+        <article id="presentation">
+            <p class="menor">Product Designer Sênior</p>
+            <h1>Luiz Eduardo</h1>
+            <p>
+                Desenho produtos digitais para operações complexas, da pesquisa à interface.
+            </p>
+            <div class="action">
+                <a href="#projetos" class="btn_hero primary">Ver projetos</a>
+                <a href="./docs/Curriculum_LuizEduardo.pdf" download="CV_LUIZ_LUCKNER.pdf" class="btn_hero">Baixar CV</a>
+                <a href="https://www.linkedin.com/in/luizluckner/" rel="noopener noreferrer" class="btn_hero" target="_blank">LinkedIn</a>
+                <a href="https://wa.me/5548999221465?text=Oi%20Luiz,%20acabei%20de%20visualizar%20seu%20portfólio%20e%20gostaria%20de%20conversar." rel="noopener noreferrer" class="btn_hero" target="_blank">WhatsApp</a>
+            </div>
+        </article>
+        <aside id="myPhoto">
+            <!--FOTO MINHA-->
+            <img src="./image/myPhoto.jpg" alt="Foto de Luiz Eduardo">
+        </aside>
+        <span class="scroll-cue" aria-hidden="true"></span>
+    </section>
+    <section id="projetos">
+        <span class="blob b1"></span>
+        <span class="blob b2"></span>
+        <article id="cards">
+            <h2 class="reveal">Projetos em destaque</h2>
+            <p class="reveal">
+                Confira projetos que refletem meu trabalho e experiência
+            </p>
+            <div id="cards-container">
+                <article class="card hurb reveal">
+                    <img src="./image/capa-abandono.png" alt="Fluxo de compra de atividades da Hurb" loading="lazy">
+                    <h3>Abandono de carrinho</h3>
+                    <p>Investiguei por que as pessoas abandonavam a compra de atividades e redesenhei o fluxo. Após o lançamento, o CTR de checkout aumentou 62%.</p>
+                    <a href="abandono.html">Ler o case da Hurb</a>
+                </article>
+                <article class="card ambev reveal">
+                    <img src="./image/ui-aplicado.webp" alt="Interface do simulador da Ambev" loading="lazy">
+                    <h3>Simulador de compra</h3>
+                    <p>Ajudei a mapear e prototipar um sistema de compra de insumos. Adaptamos a validação para uma sessão remota com 18 donos de carteira.</p>
+                    <a href="simulador.html">Ler o case da Ambev</a>
+                </article>
+                <article class="card validador reveal">
+                    <div class="validator-art" aria-hidden="true"><span>EDI / Validação de pedidos</span><strong>Regra <b>→</b> Ocorrência <b>→</b> Ação</strong></div>
+                    <h3>Validador de Pedidos</h3>
+                    <p>Pesquisei regras de validação e desenhei jornadas, fluxos e interfaces para que equipes entendessem e tratassem divergências em pedidos EDI.</p>
+                    <a href="validador.html">Ler o case do Validador</a>
+                </article>
+            </div>
+        </article>
+    </section>
+    <section id="profissional">
+        <span class="blob"></span>
+        <article class="profissional-container">
+            <h2 class="reveal">Profissional</h2>
+            <p class="reveal">
+                Atuando desde 2019, passei por consultorias, startups e grandes empresas de tecnologia, sempre focado em criar experiências digitais que geram impacto real. Trabalhei em projetos para diferentes setores, desde marketplaces e turismo até soluções SaaS e indústria 4.0. Minha abordagem une pesquisa, análise de dados e prototipação para transformar desafios complexos em produtos intuitivos e eficientes.
+            </p>
+            <div class="carrossel reveal">
+                <img src="./image/Group 2.png" alt="Catarinas Design">
+                <img src="./image/Mask group.jpg" alt="Delivery Much">
+                <img src="./image/Group 1.png" alt="Hurb">
+                <img src="./image/ahgora 1.jpg" alt="Ahgora">
+                <img src="./image/Mask group-1.jpg" alt="Vetta">
+                <img src="./image/neogrid.png" alt="Neogrid">
+            </div>
+        </article>
+    </section>
+    <section id="sobre">
+        <span class="blob"></span>
+        <section class="sobre-container">
+            <h2 class="reveal">Sobre mim</h2>
+            <p class="reveal">
+                Sou o Luiz Eduardo, tenho <span id="idade">33</span> anos, casado com a Nati e pai da Catarina.
+                Possuo sólida experiência em design de produto, atuando em empresas de tecnologia de diversos setores, com foco na criação de soluções inovadoras e centradas no usuário. Desenvolvo fluxos, protótipos e interfaces com ênfase em usabilidade, eficiência e acessibilidade.
+            </p>
+            <p class="reveal">
+                Tenho forte habilidade em liderar projetos, conduzindo pesquisas, análises de dados e validações de hipóteses para otimização contínua de sistemas complexos. Possuo experiência em ferramentas analíticas e metodologias ágeis, garantindo a entrega de produtos que atendem às demandas dos clientes e do mercado. Busco constantemente atualizações e especializações, trazendo contribuições significativas para o sucesso das equipes e empresas em que atuo.
+            </p>
+            <h3 class="reveal">Minhas especialidades</h3>
+            <div class="especialidades reveal">
+                <p class="espec">Research</p>
+                <p class="espec">Teste de usabilidade</p>
+                <p class="espec">Prototipação</p>
+                <p class="espec">Analise de dados</p>
+                <p class="espec">Product strategy</p>
+            </div>
+        </section>
+    </section>
+</main>
+<footer>
+    <span class="blob"></span>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div>
+                <p class="menor reveal">Vamos conversar?</p>
+                <h2 class="reveal">Bora falar sobre o seu próximo produto</h2>
+                <a class="btn_hero primary footer-cta reveal" href="https://wa.me/5548999221465?text=Oi%20Luiz,%20acabei%20de%20visualizar%20seu%20portfólio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+            </div>
+            <div class="socials reveal">
+                <a href="https://www.linkedin.com/in/luizluckner/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M6.94 7.5a1.44 1.44 0 1 0 0-2.88 1.44 1.44 0 0 0 0 2.88ZM5.5 9.5h3v9h-3v-9Zm5.5 0h2.87v1.23h.04c.4-.75 1.38-1.55 2.84-1.55 3.04 0 3.6 2 3.6 4.6v5.72h-3v-5.07c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68v5.16h-3v-9Z" fill="white" stroke="none"/></svg>
+                </a>
+                <a href="https://github.com/luizluckner" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.85-2.35 4.7-4.58 4.94.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+                </a>
+                <a href="mailto:luiz.luckner@gmail.com" aria-label="E-mail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+                </a>
+                <a href="https://wa.me/5548999221465" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.21A9 9 0 1 0 12 3Z"/><path d="M8.5 8.5c.3-.7 1-.6 1.5-.5.3.7.7 1.5.8 1.7.1.2 0 .4-.1.6-.4.5-.8.7-.5 1.2.4.7 1.6 2 3 2.6.4.2.6.1.9-.2.3-.4.7-.9.9-.9.2 0 1.5.6 1.7.8.2.2.2.5.1.8-.2.6-1.1 1.1-1.7 1.1-1.4.1-3.6-.7-5.3-2.4-1.5-1.5-2.3-3.1-2.4-3.9 0-.4.1-.9.4-1.2Z" fill="white" stroke="none"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Luiz Eduardo. Todos os direitos reservados.</span>
+            <span>Florianópolis, Santa Catarina</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+  // Header: fica com fundo/blur só depois que o usuário já rolou um pouco
+  // (assim ele começa transparente sobre o hero, como no seu design original)
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Menu mobile: abre/fecha a lista de links
+  const navToggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  navToggle.addEventListener('click', () => {
+    const isOpen = navList.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+  navList.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navList.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Calcula a idade real considerando se o aniversário deste ano já passou ou não
+function calcularIdade(dataNascimento) {
+  const hoje = new Date();
+  const nascimento = new Date(dataNascimento);
+
+  let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+  // Se ainda não chegou o mês/dia do aniversário este ano, tira 1 da conta
+  const aindaNaoFezAniversario =
+    hoje.getMonth() < nascimento.getMonth() ||
+    (hoje.getMonth() === nascimento.getMonth() && hoje.getDate() < nascimento.getDate());
+
+  if (aindaNaoFezAniversario) idade--;
+
+  return idade;
+}
+
+// Sua data: 02/07/1991 -> formato ISO é ano-mês-dia
+const idadeEl = document.getElementById('idade');
+if (idadeEl) {
+  idadeEl.textContent = calcularIdade('1991-07-02');
+}
+
+  // Reveal on scroll: mesma lógica de sempre, observa e anima quando entra na tela
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('motion-ready');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  }
+</script>
+</body>
+</html>

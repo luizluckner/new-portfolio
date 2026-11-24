@@ -1,0 +1,38 @@
+/* Hero: keep the original texture and animate only its clipped background. */
+#hero { position: relative; isolation: isolate; overflow: hidden; height: auto; min-height: 100vh; min-height: 100svh; padding-block: 96px 80px; }
+#hero .bg-hero { inset: -14%; width: auto; height: auto; pointer-events: none; }
+#hero .bg-hero::after { inset: 0; height: auto; }
+#hero .scroll-cue { bottom: 24px; }
+:where(a, button):focus-visible { outline: 2px solid #65f0ee; outline-offset: 4px; }
+main section[id], .case-content [id] { scroll-margin-top: 100px; }
+.card:hover, .card:focus-within { transform: none; border-color: rgba(239, 57, 172, .5); box-shadow: 0 20px 50px rgba(0, 0, 0, .35); }
+#cards .card a { align-self: flex-start; border: 0; border-bottom: 1px solid rgba(255, 255, 255, .38); padding: 4px 0; border-radius: 0; text-align: left; }
+#cards .card a:hover { background: transparent; }
+.validator-art { display: grid; align-content: center; justify-items: start; gap: 12px; min-height: 200px; padding: clamp(20px, 4vw, 42px); color: #fafafa; background: radial-gradient(ellipse at 95% 110%, #721e6a, transparent 72%), linear-gradient(145deg, #31205d, #160831); }
+.validator-art span { color: #d6caea; font-size: .875rem; }
+.validator-art strong { font-family: "Funnel Display", sans-serif; font-size: clamp(1.05rem, 2vw, 1.45rem); }
+.validator-art b { font-weight: 400; color: #65f0ee; }
+.case-hero-card > .validator-art { min-height: 240px; }
+.case-role { margin-bottom: 44px; padding: 2px 0 2px 20px; border-inline-start: 2px solid #cc479b; }
+.case-role h2:first-child { margin-top: 0; }
+.validator-page .case-content ul { padding-inline-start: 1.4rem; margin-bottom: 1.5rem; line-height: 1.65; }
+@media (min-width: 761px) { .motion-ready #cards-container .reveal:nth-child(2) { transition-delay: .07s; } .motion-ready #cards-container .reveal:nth-child(3) { transition-delay: .14s; } }
+@media (prefers-reduced-motion: no-preference) {
+  #hero .bg-hero { animation: hero-wave 17s ease-in-out infinite; }
+  #presentation, #myPhoto { animation: hero-arrival .7s ease-out both; }
+  #myPhoto { animation-delay: .12s; }
+}
+@keyframes hero-wave {
+  0%, 100% { transform: translate3d(-2%, 0, 0) scale(1.02) rotate(-3deg); }
+  38% { transform: translate3d(4%, -3%, 0) scale(1.11, 1.03) rotate(4deg); }
+  72% { transform: translate3d(-3%, 3%, 0) scale(1.04, 1.1) rotate(-1deg); }
+}
+@keyframes hero-arrival { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+@media (max-width: 760px) { #hero { padding-block: 110px 80px; } }
+
+.case-hero-card > .case-hero-image { min-width: 0; overflow: hidden; }
+.case-hero-card > .case-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.related-card > .validator-art { min-height: 220px; }
