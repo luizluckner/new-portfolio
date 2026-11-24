@@ -100,3 +100,31 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
   width: 100%;
   height: auto;
 }
+
+.career-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 28px;
+}
+.career-details { width: max-content; max-width: 100%; }
+.career-details summary {
+  display: list-item;
+  cursor: pointer;
+  list-style-position: inside;
+}
+.career-panel {
+  max-width: 44ch;
+  padding: 20px;
+  margin: 12px auto 0;
+  text-align: left;
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  background: var(--glass);
+}
+.career-panel dt { font-weight: 700; }
+.career-panel dd { margin-top: 4px; color: var(--muted); line-height: 1.55; }
+.career-panel dd + dt { margin-top: 16px; }
