@@ -98,3 +98,8 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
   background-position: 69.439% 52.778%;
 }
 @media (max-width: 760px) { .neogrid-logo { width: 76px; } }
+
+.validator-page .case-content figure img {
+  width: 100%;
+  height: auto;
+}
