@@ -6,7 +6,8 @@
 :where(a, button):focus-visible { outline: 2px solid #65f0ee; outline-offset: 4px; }
 main section[id], .case-content [id] { scroll-margin-top: 100px; }
 .card:hover, .card:focus-within { transform: none; border-color: rgba(239, 57, 172, .5); box-shadow: 0 20px 50px rgba(0, 0, 0, .35); }
-#cards .card a {
+#cards .card a,
+.related-card .rc-link {
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -19,7 +20,8 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
   text-align: center;
   transition: color .3s, background-color .3s, border-color .3s;
 }
-#cards .card a:hover, #cards .card a:focus-visible {
+#cards .card a:hover, #cards .card a:focus-visible,
+.related-card:hover .rc-link, .related-card:focus-visible .rc-link {
   color: var(--pink-bright);
   border-color: var(--pink-bright);
   background: rgba(255, 255, 255, .06);
@@ -52,6 +54,8 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
 .case-hero-card > .case-hero-image { min-width: 0; overflow: hidden; }
 .case-hero-card > .case-hero-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .related-card > .validator-art { min-height: 220px; }
+.related-card .rc-link { margin-top: 12px; font: inherit; }
+.related-card:not(:hover):not(:focus-visible) .rc-link { color: var(--white); }
 
 .nav-actions { display: flex; align-items: center; gap: 8px; position: relative; z-index: 110; }
 .nav-socials { display: flex; gap: 4px; }
