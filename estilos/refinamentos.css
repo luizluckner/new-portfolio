@@ -30,19 +30,8 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
 .validator-art span { color: #d6caea; font-size: .875rem; }
 .validator-art strong { font-family: "Funnel Display", sans-serif; font-size: clamp(1.05rem, 2vw, 1.45rem); }
 .validator-art b { font-weight: 400; color: #65f0ee; }
-.validator-hero-preview {
-  display: grid;
-  place-items: center;
-  min-width: 0;
-  padding: clamp(12px, 2vw, 24px);
-  background: radial-gradient(ellipse at 95% 110%, #721e6a, transparent 72%), linear-gradient(145deg, #31205d, #160831);
-}
-.validator-hero-preview img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+.validator-hero-preview { position: relative; }
+.validator-hero-preview img { position: absolute; inset: 0; }
 .validator-hero-preview:focus-visible { outline-offset: -4px; }
 .case-role { margin-bottom: 44px; padding: 2px 0 2px 20px; border-inline-start: 2px solid #cc479b; }
 .case-role h2:first-child { margin-top: 0; }
