@@ -247,6 +247,8 @@ header > menu > nav > ul > li > a:hover::after{ width:100%; }
 /* ---------- FOOTER ---------- */
 footer{
   position:relative; overflow:hidden;
+  background:linear-gradient(180deg, #120823, var(--bg-0));
+  border-top:1px solid rgba(198, 188, 219, .18);
   padding:100px 24px 32px;
 }
 
