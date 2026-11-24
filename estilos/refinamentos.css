@@ -7,17 +7,20 @@
 main section[id], .case-content [id] { scroll-margin-top: 100px; }
 .card:hover, .card:focus-within { transform: none; border-color: rgba(239, 57, 172, .5); box-shadow: 0 20px 50px rgba(0, 0, 0, .35); }
 #cards .card a {
-  align-self: flex-start;
-  display: inline-flex;
+  align-self: stretch;
+  display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 44px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, .55);
   border-radius: 6px;
   background: transparent;
-  text-align: left;
+  text-align: center;
+  transition: color .3s, background-color .3s, border-color .3s;
 }
 #cards .card a:hover, #cards .card a:focus-visible {
+  color: var(--pink-bright);
   border-color: var(--pink-bright);
   background: rgba(255, 255, 255, .06);
 }
