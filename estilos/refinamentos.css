@@ -1,5 +1,13 @@
 /* Hero: keep the original texture and animate only its clipped background. */
 #hero { position: relative; isolation: isolate; overflow: hidden; height: auto; min-height: 100vh; min-height: 100svh; padding-block: 96px 80px; }
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000 72%, transparent);
+}
 #hero .bg-hero { inset: -14%; width: auto; height: auto; pointer-events: none; }
 #hero .bg-hero::after { inset: 0; height: auto; }
 #hero .scroll-cue { bottom: 24px; }
@@ -38,7 +46,15 @@ main section[id], .case-content [id] { scroll-margin-top: 100px; }
 .validator-page .case-content ul { padding-inline-start: 1.4rem; margin-bottom: 1.5rem; line-height: 1.65; }
 @media (min-width: 761px) { .motion-ready #cards-container .reveal:nth-child(2) { transition-delay: .07s; } .motion-ready #cards-container .reveal:nth-child(3) { transition-delay: .14s; } }
 @media (prefers-reduced-motion: no-preference) {
-  #hero .bg-hero { animation: hero-wave 17s ease-in-out infinite; }
+  .hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000 72%, transparent);
+}
+#hero .bg-hero { animation: hero-wave 17s ease-in-out infinite; }
   #presentation, #myPhoto { animation: hero-arrival .7s ease-out both; }
   #myPhoto { animation-delay: .12s; }
 }

@@ -22,7 +22,11 @@
 
 body{
   font-family:"Roboto", serif;
-  background:linear-gradient(180deg, var(--bg-1) 0%, var(--bg-0) 100%);
+  background:
+    radial-gradient(ellipse at 0% 36%, rgba(92, 55, 136, .28), transparent 34%),
+    radial-gradient(ellipse at 100% 60%, rgba(154, 48, 144, .19), transparent 33%),
+    radial-gradient(ellipse at 50% 100%, rgba(154, 48, 144, .18), transparent 27%),
+    linear-gradient(180deg, var(--bg-1), var(--bg-0));
   color:var(--white);
   overflow-x:hidden;
 }
@@ -135,15 +139,8 @@ header > menu > nav > ul > li > a:hover::after{ width:100%; }
 }
 @keyframes cue{ 0%{opacity:0; transform:translateY(-4px);} 50%{opacity:1;} 100%{opacity:0; transform:translateY(10px);} }
 
-/* ---------- BLOBS AMBIENTE (ecoam a arte do hero nas outras seções) ---------- */
-.blob{
-  position:absolute; border-radius:50%; filter:blur(90px); z-index:0; pointer-events:none;
-}
-
 /* ---------- PROJETOS ---------- */
 #projetos{ position:relative; padding:140px 24px; overflow:hidden; }
-#projetos .blob.b1{ width:420px; height:420px; background:var(--violet); opacity:.35; top:-120px; left:-100px; }
-#projetos .blob.b2{ width:360px; height:360px; background:var(--pink); opacity:.22; bottom:-140px; right:-80px; }
 
 #cards{
   max-width:1200px; margin:auto; text-align:center; position:relative; z-index:1;
@@ -194,10 +191,7 @@ header > menu > nav > ul > li > a:hover::after{ width:100%; }
 /* ---------- PROFISSIONAL ---------- */
 #profissional{
   position:relative; overflow:hidden;
-  background:linear-gradient(160deg, var(--bg-2), var(--bg-1) 60%);
-  box-shadow:inset 0 0 40px rgba(0,0,0,.25);
 }
-#profissional .blob{ width:500px; height:500px; background:var(--magenta); opacity:.25; top:-160px; right:-120px; }
 
 .profissional-container{
   max-width:1200px; margin:auto; padding:110px 24px;
@@ -234,7 +228,6 @@ header > menu > nav > ul > li > a:hover::after{ width:100%; }
 
 /* ---------- SOBRE ---------- */
 #sobre{ position:relative; padding:130px 24px; overflow:hidden; }
-#sobre .blob{ width:460px; height:460px; background:var(--purple); opacity:.3; bottom:-180px; left:-120px; }
 
 .sobre-container{ max-width:800px; margin:auto; position:relative; z-index:1; }
 .sobre-container h2{ text-align:center; margin-bottom:24px; }
@@ -254,10 +247,8 @@ header > menu > nav > ul > li > a:hover::after{ width:100%; }
 /* ---------- FOOTER ---------- */
 footer{
   position:relative; overflow:hidden;
-  background:linear-gradient(180deg, var(--bg-1), var(--bg-0));
   padding:100px 24px 32px;
 }
-footer .blob{ width:520px; height:520px; background:var(--magenta); opacity:.28; bottom:-220px; left:50%; transform:translateX(-50%); }
 
 .footer-container{ max-width:1200px; margin:auto; position:relative; z-index:1; }
 .footer-top{
